@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+
+<!-- curious little thing, aren't you?~ -->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="what the hap is fuckening :buhhh:" />
+    <meta name="keywords" content="Sen" />
+    <meta name="author" content="Sen" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#1a1a1a" />
+
+    <meta property="og:title" content="sen.rip" />
+    <meta property="og:description" content="what the hap is fuckening :buhhh:" />
+    <meta property="og:url" content="https://sen.rip" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="sen.rip" />
+    <meta name="twitter:description" content="what the hap is fuckening :buhhh:" />
+
+    <link rel="icon" href="/img/teto.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- stylesheet is empty, placeholder -->
+    <title>sen.rip</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            user-select: none;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            font-family: "CarbonMono", monospace;
+            background: #f8f8f8;
+            color: #0b0b0b;
+            line-height: 1.45;
+            padding: 40px 20px;
+            padding-bottom: 70px;
+        }
+
+        .wrap {
+            max-width: 940px;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            justify-content: space-between;
+            margin-bottom: 28px;
+        }
+
+        .brand {
+            font-size: 20px;
+        }
+
+        .brand .title {
+            font-family: "UnifrakturCook", serif;
+            font-weight: 700;
+            font-size: 34px;
+            letter-spacing: 0.5px;
+        }
+
+        .brand .subtitle {
+            display: block;
+            font-size: 12px;
+            color: #666;
+            margin-top: 4px;
+        }
+
+        nav {
+            display: flex;
+            gap: 18px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-size: 14px;
+            color: #333;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 28px;
+        }
+
+        h1 {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 30px;
+            margin-bottom: 12px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin: 14px 0 8px;
+        }
+
+        p.lead {
+            color: #222;
+            margin-bottom: 12px;
+        }
+
+        .about {
+            background: transparent;
+        }
+
+        #about a {
+            display: block;
+            font-size: 14px;
+            text-decoration: none;
+            color: #0b0b0b;
+            margin-bottom: 8px;
+        }
+
+        #about a:hover {
+            text-decoration: underline;
+        }
+
+        .banners {
+            margin-top: 34px;
+            border-top: 1px dashed #e6e6e6;
+            padding-top: 20px;
+        }
+
+        .gallery-subsection {
+            margin-top: 14px;
+        }
+
+        .gallery-subsection h2,
+        .gallery-subsection h3 {
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: #999;
+            margin: 0 0 6px;
+        }
+
+        .fav-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(88px, 1fr));
+            gap: 8px;
+            margin-top: 8px;
+            max-width: 700px;
+        }
+
+        .fav-buttons a img {
+            width: 100%;
+            cursor: pointer;
+        }
+
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background: #f8f8f8;
+            border-top: 1px dashed #e6e6e6;
+            padding: 12px 20px;
+            font-size: 13px;
+            color: #555;
+            z-index: 1000;
+        }
+
+        footer .mono {
+            max-width: 940px;
+            margin: 0 auto;
+        }
+
+        footer a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .mono {
+            font-family: monospace;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav {
+                margin-top: 12px;
+            }
+
+            .brand .title {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="brand">
+                <span class="title">sen</span>
+                <span class="subtitle" id="subtitle">...</span>
+            </div>
+            <nav>
+                <a href="#home">home</a>
+                <a href="#about">about</a>
+                <a href="#blog">blog</a>
+                <a href="#gear">gear</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home" class="about">
+                <h1>hello!</h1>
+                <p class="lead">my name is sen, i am a cat just like you!</p>
+                <p class="lead">i do not know what to put here. this is just a landing page!</p>
+                <p class="lead">have this here image, just for you:</p>
+
+                <img src="img/applaysos.jpeg" style="max-width: 50%;">
+                <br>
+                <p class="lead">bwaaa</p>
+
+                <p id="nowplaying"><span id="nowplaying-text"></span></p>
+
+                <div class="gallery-subsection">
+                    <h3>cool people</h3>
+                    <div class="fav-buttons">
+                        <a href="https://chan.kiwigrape.io/" target="_blank" title="kgChan"><img
+                                src="https://kiwigrape.io/files/kgChan.png" alt="kgChan"></a>
+                        <a href="https://ohaa.xyz/" target="_blank" title="Oha"><img
+                                src="https://ohaa.xyz/badges/oha.png" alt="ohaa.xyz"></a>
+                        <a href="https://anemoia.moe" target="_blank" title="Anemoia"><img
+                                src='https://anemoia.moe/images/buttons/footer/jesx.gif' alt='anemoia.moe' /></a>
+                    </div>
+                </div>
+
+                <div class="gallery-subsection">
+                    <h2>cool stuff</h2>
+                    <div class="fav-buttons">
+                        <a href="https://apple.com/" target="_blank" title="Apple"><img src="/img/btn/macos.gif"
+                                alt="MacOS"></a>
+                        <a href="https://nixos.org/" target="_blank" title="Nix"><img src="/img/btn/nix.gif"
+                                alt="Nix"></a>
+                        <a href="https://helium.computer/" target="_blank" title="Helium"><img src="/img/btn/helium.png"
+                                alt="Helium"></a>
+                        <a href="https://ghostty.org/" target="_blank" title="Ghostty"><img src="/img/btn/ghostty.png"
+                                alt="Ghostty"></a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about">
+                <h1>hello, my name is sen</h1>
+                <p>i am a cat from the interwebs (nl) cursed with computer autism.</p>
+                <p>lorum ipsum bla bla bla, this page is w.i.p</p>
+                <br>
+                <p>to keep you entertained, i have hired this funny cat!</p>
+                <br>
+                <img src="/img/funnycat.jpeg" style="max-width: 64%;">
+            </section>
+
+            <section id="blog">
+                <h1>bog......</h1>
+                <p>coming soon... (sometime)</p>
+            </section>
+
+            <section id="gear">
+                <h1>gear</h1>
+                <h3>computers</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li>- macbook pro m4 pro (20c), 24gb, 1tb</li>
+                    <li>- desktop ryzen 7 9700x, rx 7800 xt + rx 6600 (arch + virtualized windows w/ gpu passthrough)
+                    </li>
+                    <li>- steam machine whenever i get the fucking chance to buy it...</li>
+                </ul>
+                <h3>peripherals</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li>- lg ultragear 27gs95qe-b</li>
+                    <li>- keychron v2 (red switches)</li>
+                    <li>- logitech g pro x superlight 2</li>
+                    <li>- edifier rb1280</li>
+                    <li>- hyperx quadcast s</li>
+                    <li>- apple earpods (usb c)</li>
+                    <li>- maybe a thunderbolt dock soon?</li>
+                </ul>
+                <h3>other</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li>- iphone 17 256gb</li>
+                    <li>- samsung galaxy s21+ 128gb</li>
+                    <li>- airpods pro 2 (usb c)</li>
+                    <li>- lots of gaming consoles i collected over the years; notably a phat ps2 purchased in 2001 by my
+                        father that is still in perfect condition</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <div class="mono">sen.rip - no rights reserved ^^" | <a href="https://github.com/sifsen">github</a> | <a
+                    href="discord">discord</a> | <a href="mailto:hello@sen.rip">hello [at] sen [dot] rip</a></div>
+        </footer>
+    </div>
+
+    <script>
+        try {
+            const name = localStorage.getItem('siteName') || 'Sen';
+            document.querySelector('.brand .title').textContent = name;
+        } catch (e) { }
+
+        const sections = document.querySelectorAll('main > section');
+        const navLinks = document.querySelectorAll('nav a');
+
+        function showSection(id) {
+            sections.forEach(sec => sec.style.display = sec.id === id ? 'block' : 'none');
+        }
+
+        const initialSection = window.location.hash ? window.location.hash.substring(1) : 'home';
+        showSection(initialSection);
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                const target = link.getAttribute('href').substring(1);
+                showSection(target);
+                window.history.pushState(null, '', `#${target}`);
+            });
+        });
+
+        const strings = [
+            'i see you but i ignore you',
+            'by any means necessary',
+            'you never understood what i did',
+            'huh. okay. moving on.',
+            'nope',
+            'k.',
+            'THE WORLD HAS RESERVED NOTHING FOR YOU',
+            'YOU\'RE THE CAPTAIN NOW',
+            'wild',
+            'bold of you to assume i am awake',
+            'experiencing technical difficulties between chair and screen',
+            'i cannot hear you over the sound of AAAAAAAAAAAAAAAAAAAA',
+            'certified catboy',
+            'FUCK.',
+            'spilled monster on my keeb',
+            'kanker motorsport',
+            'never let a number be your legacy :keycap_ten:',
+            'living, laughing, losing my shit',
+            'achieving nothing with great success',
+            'having a time',
+            'aggressively doing nothing',
+            'thriving (derogatory)',
+            'losing it (affectionate)',
+            'WELCOME TO YOUR PERSONAL SIMULATION',
+            'assassinated my own sleep schedule',
+            'detonated a VM for fun',
+            'immolated a keyboard with caffeine',
+            'thank you kind stranger!',
+            'sentenced to 10 minutes of twitter!'
+        ];
+
+        window.onload = function () {
+            const element = document.getElementById('subtitle');
+            const index = Math.floor(Math.random() * strings.length);
+            element.innerText = strings[index];
+        };
+    </script>
+</body>
+
+</html>

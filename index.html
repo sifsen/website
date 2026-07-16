@@ -117,6 +117,16 @@
             margin-bottom: 12px;
         }
 
+        ::selection {
+            background: #0b0b0b;
+            color: #f8f8f8;
+        }
+
+        ::-moz-selection {
+            background: #0b0b0b;
+            color: #f8f8f8;
+        }
+
         .about {
             background: transparent;
         }
@@ -165,6 +175,16 @@
             width: 88px;
             height: 31px;
             display: block;
+        }
+
+        #gear ul,
+        #gear li {
+            user-select: text;
+            -webkit-user-select: text;
+        }
+
+        #gear li::before {
+            content: "- ";
         }
 
         footer {
@@ -262,14 +282,14 @@
                 <div class="gallery-subsection">
                     <h2>cool stuff</h2>
                     <div class="fav-buttons">
-                        <a href="https://apple.com/" target="_blank" title="Apple"><img src="/assets/images/buttons/macos.gif"
-                                alt="MacOS"></a>
-                        <a href="https://nixos.org/" target="_blank" title="Nix"><img src="/assets/images/buttons/nix.gif"
-                                alt="Nix"></a>
-                        <a href="https://helium.computer/" target="_blank" title="Helium"><img src="/assets/images/buttons/helium.png"
-                                alt="Helium"></a>
-                        <a href="https://ghostty.org/" target="_blank" title="Ghostty"><img src="/assets/images/buttons/ghostty.png"
-                                alt="Ghostty"></a>
+                        <a href="https://apple.com/" target="_blank" title="Apple"><img
+                                src="/assets/images/buttons/macos.gif" alt="MacOS"></a>
+                        <a href="https://nixos.org/" target="_blank" title="Nix"><img
+                                src="/assets/images/buttons/nix.gif" alt="Nix"></a>
+                        <a href="https://helium.computer/" target="_blank" title="Helium"><img
+                                src="/assets/images/buttons/helium.png" alt="Helium"></a>
+                        <a href="https://ghostty.org/" target="_blank" title="Ghostty"><img
+                                src="/assets/images/buttons/ghostty.png" alt="Ghostty"></a>
                     </div>
                 </div>
             </section>
@@ -293,27 +313,27 @@
                 <h1>gear</h1>
                 <h3>computers</h3>
                 <ul style="list-style: none; padding: 0;">
-                    <li>- macbook pro m4 pro (20c), 24gb, 1tb</li>
-                    <li>- desktop ryzen 7 9700x, rx 7800 xt + rx 6600 (arch + virtualized windows w/ gpu passthrough)
+                    <li>macbook pro m4 pro (20c), 24gb, 1tb</li>
+                    <li>desktop ryzen 7 9700x, rx 7800 xt + rx 6600 (arch + virtualized windows w/ gpu passthrough)
                     </li>
-                    <li>- steam machine whenever i get the fucking chance to buy it...</li>
+                    <li>steam machine whenever i get the fucking chance to buy it...</li>
                 </ul>
                 <h3>peripherals</h3>
                 <ul style="list-style: none; padding: 0;">
-                    <li>- lg ultragear 27gs95qe-b</li>
-                    <li>- keychron v2 (red switches)</li>
-                    <li>- logitech g pro x superlight 2</li>
-                    <li>- edifier rb1280</li>
-                    <li>- hyperx quadcast s</li>
-                    <li>- apple earpods (usb c)</li>
-                    <li>- maybe a thunderbolt dock soon?</li>
+                    <li>lg ultragear 27gs95qe-b</li>
+                    <li>keychron v2 (red switches)</li>
+                    <li>logitech g pro x superlight 2</li>
+                    <li>edifier rb1280</li>
+                    <li>hyperx quadcast s</li>
+                    <li>apple earpods (usb c)</li>
+                    <li>maybe a thunderbolt dock soon?</li>
                 </ul>
                 <h3>other</h3>
                 <ul style="list-style: none; padding: 0;">
-                    <li>- iphone 17 256gb</li>
-                    <li>- samsung galaxy s21+ 128gb</li>
-                    <li>- airpods pro 2 (usb c)</li>
-                    <li>- lots of gaming consoles i collected over the years; notably a phat ps2 purchased in 2001 by my
+                    <li>iphone 17 256gb</li>
+                    <li>samsung galaxy s21+ 128gb</li>
+                    <li>airpods pro 2 (usb c)</li>
+                    <li>lots of gaming consoles i collected over the years; notably a phat ps2 purchased in 2001 by my
                         father that is still in perfect condition</li>
                 </ul>
             </section>

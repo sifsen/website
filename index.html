@@ -26,213 +26,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css" />
-    <!-- stylesheet is empty, placeholder -->
     <title>sen.rip</title>
 
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            user-select: none;
-        }
-
-        html,
-        body {
-            height: 100%;
-        }
-
-        body {
-            font-family: "CarbonMono", monospace;
-            background: #f8f8f8;
-            color: #0b0b0b;
-            line-height: 1.45;
-            padding: 40px 20px;
-            padding-bottom: 70px;
-        }
-
-        .wrap {
-            max-width: 940px;
-            margin: 0 auto;
-        }
-
-        header {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: baseline;
-            justify-content: space-between;
-            margin-bottom: 28px;
-        }
-
-        .brand {
-            font-size: 20px;
-        }
-
-        .brand .title {
-            font-family: "UnifrakturCook", serif;
-            font-weight: 700;
-            font-size: 34px;
-            letter-spacing: 0.5px;
-        }
-
-        .brand .subtitle {
-            display: block;
-            font-size: 12px;
-            color: #666;
-            margin-top: 4px;
-        }
-
-        nav {
-            display: flex;
-            gap: 18px;
-        }
-
-        nav a {
-            text-decoration: none;
-            font-size: 14px;
-            color: #333;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        section {
-            margin-bottom: 28px;
-        }
-
-        h1 {
-            font-family: Georgia, 'Times New Roman', serif;
-            font-size: 30px;
-            margin-bottom: 12px;
-        }
-
-        h2 {
-            font-size: 20px;
-            margin: 14px 0 8px;
-        }
-
-        p.lead {
-            color: #222;
-            margin-bottom: 12px;
-        }
-
-        ::selection {
-            background: #0b0b0b;
-            color: #f8f8f8;
-        }
-
-        ::-moz-selection {
-            background: #0b0b0b;
-            color: #f8f8f8;
-        }
-
-        .about {
-            background: transparent;
-        }
-
-        #about a {
-            display: block;
-            font-size: 14px;
-            text-decoration: none;
-            color: #0b0b0b;
-            margin-bottom: 8px;
-        }
-
-        #about a:hover {
-            text-decoration: underline;
-        }
-
-        .banners {
-            margin-top: 34px;
-            border-top: 1px dashed #e6e6e6;
-            padding-top: 20px;
-        }
-
-        .gallery-subsection {
-            margin-top: 14px;
-        }
-
-        .gallery-subsection h2,
-        .gallery-subsection h3 {
-            font-size: 11px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.06em;
-            color: #999;
-            margin: 0 0 6px;
-        }
-
-        .fav-buttons {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, 88px);
-            gap: 8px;
-            margin-top: 8px;
-            max-width: 700px;
-        }
-
-        .fav-buttons img {
-            width: 88px;
-            height: 31px;
-            display: block;
-        }
-
-        #gear ul,
-        #gear li {
-            user-select: text;
-            -webkit-user-select: text;
-        }
-
-        #gear li::before {
-            content: "- ";
-        }
-
-        footer {
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            background: #f8f8f8;
-            border-top: 1px dashed #e6e6e6;
-            padding: 12px 20px;
-            font-size: 13px;
-            color: #555;
-            z-index: 1000;
-        }
-
-        footer .mono {
-            max-width: 940px;
-            margin: 0 auto;
-        }
-
-        footer a {
-            color: #333;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        .mono {
-            font-family: monospace;
-        }
-
-        @media (max-width: 600px) {
-            header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            nav {
-                margin-top: 12px;
-            }
-
-            .brand .title {
-                font-size: 26px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="/style.css" />
 </head>
 
 <body>
@@ -305,8 +101,15 @@
             </section>
 
             <section id="blog">
-                <h1>bog......</h1>
-                <p>coming soon... (sometime)</p>
+                <div id="blog-list">
+                    <h1>bog......</h1>
+                    <p class="lead">posts</p>
+                    <ul class="blog-post-list" id="post-list"></ul>
+                </div>
+                <div id="blog-view" style="display:none;">
+                    <span class="blog-back-link" id="blog-back">&larr; back</span>
+                    <div id="blog-content"></div>
+                </div>
             </section>
 
             <section id="gear">
@@ -346,6 +149,7 @@
         </footer>
     </div>
 
+    <script src="/blog.js"></script>
     <script>
         try {
             const name = localStorage.getItem('siteName') || 'Sen';
@@ -407,6 +211,7 @@
             const element = document.getElementById('subtitle');
             const index = Math.floor(Math.random() * strings.length);
             element.innerText = strings[index];
+            initBlog();
         };
     </script>
 </body>
